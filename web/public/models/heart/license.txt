@@ -1,0 +1,16 @@
+Model Information:
+* title:	Human_heart_3d_model
+* source:	https://sketchfab.com/3d-models/human-heart-3d-model-5e442ad98b574fdf844432b246fcf323
+* author:	marxtrax (https://sketchfab.com/marxtrax)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Human_heart_3d_model" (https://sketchfab.com/3d-models/human-heart-3d-model-5e442ad98b574fdf844432b246fcf323) by marxtrax (https://sketchfab.com/marxtrax) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+Local adaptation: converted KHR_materials_pbrSpecularGlossiness to a nonmetallic
+roughness material, retained diffuse/normal/occlusion maps, omitted emission,
+normalized display scale and added an illustrative procedural pulse.
+Retrieved 2026-09-15 from the credited copy at:
+https://github.com/HemanSaga/HumanAnatomy/tree/main/models/human_heart_3d_model

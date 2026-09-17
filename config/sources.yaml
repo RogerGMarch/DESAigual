@@ -1,0 +1,75 @@
+project_root: ..
+
+database:
+  path: data/processed/urban_network.duckdb
+
+sources:
+  aed:
+    path: data/raw/aed.csv
+    url: https://datosabiertos.jcyl.es/web/jcyl/risp/es/salud/desfibriladores_espacios_fisicos/1284786686472.csv
+    sha256: 1d1a76f92ead672812a5a1d2a562fd82be9fca32bd844d849c6f48bc3cc75d03
+    retrieved_at: 2026-09-07
+    description: "Junta de Castilla y Leon Registro de DESA en espacios fisicos"
+  municipalities:
+    path: data/raw/municipalities.csv
+    url: https://datosabiertos.jcyl.es/web/jcyl/risp/es/sector-publico/municipios/1284278782067.csv
+    sha256: de256dda906fba0355454b7fae659eb0f600c077d27550b85d9ee580bfa23e05
+    retrieved_at: 2026-09-07
+    description: "Junta de Castilla y Leon Registro de municipios"
+  osm:
+    path: data/raw/castilla-y-leon-latest.osm.pbf
+    url: https://download.geofabrik.de/europe/spain/castilla-y-leon-260906.osm.pbf
+    md5: 077b8c31bace475993444cfc963bdecf
+    sha256: 0338064f86ee448ddf2f5503b4382d24a6ec6b7292336a4128adc4f638c41425
+    retrieved_at: 2026-09-07
+    description: "Geofabrik OpenStreetMap extract for Castilla y Leon"
+  hospitals:
+    path: data/raw/hospitals.csv
+    url: https://datosabiertos.jcyl.es/web/jcyl/risp/es/salud/hospitales-informacion-general/1284848018107.csv
+    sha256: 4a3c3f3e2280babddaaf72b2c78421a8b48a6cea53b2ba5e61e2b9641f8f8da3
+    retrieved_at: 2026-09-08
+    description: "Official Castilla y Leon hospital catalogue"
+  hospital_emergency:
+    path: data/raw/hospital_emergency.csv
+    url: https://datosabiertos.jcyl.es/web/jcyl/risp/es/salud/recursos-atencion-urgente-hospitales-plantilla-urgencias/1285054181256.csv
+    sha256: ce21f8c09fde762b713b2efe4f44bb7a8e6922fc5d67007705d181c61bc19f86
+    retrieved_at: 2026-09-08
+    description: "Official emergency-hospital staffing catalogue"
+  hospital_locations:
+    path: data/interim/hospitals_geocoded.csv
+    description: "Emergency hospitals matched to representative OSM facility points"
+  catastro_buildings:
+    path: data/raw/catastro_buildings
+    feed_template: https://www.catastro.hacienda.gob.es/INSPIRE/buildings/{province}/ES.SDGC.bu.atom_{province}.xml
+    wfs_url: https://ovc.catastro.meh.es/INSPIRE/wfsBU.aspx
+    province_codes: [05, 09, 24, 34, 37, 40, 42, 47, 49]
+    retrieved_at: 2026-09-08
+    description: "Spanish Directorate General for Cadastre INSPIRE BU building footprints; municipality ZIP archives"
+
+geocoding:
+  enabled: true
+  endpoint: https://www.cartociudad.es/geocoder/api/geocoder/candidatesJsonp
+  callback_parameter: callback
+  batch_size: 250
+  delay_seconds: 0.2
+  timeout_seconds: 30
+  fallback:
+    enabled: true
+    endpoint: https://nominatim.openstreetmap.org/search
+    user_agent: desfibrilator-aed-accessibility/0.1 (research project)
+    batch_size: 250
+    delay_seconds: 1.0
+    timeout_seconds: 30
+  mapbox:
+    enabled: false
+    endpoint: https://api.mapbox.com/search/geocode/v6/batch
+    batch_size: 100
+    timeout_seconds: 60
+    permanent: true
+    proximity_radius_km: 35
+
+llm_geocoding:
+  enabled: false
+  batch_size: 10
+  prompt_version: address-hypotheses-v1
+  mapbox_proximity_radius_km: 35

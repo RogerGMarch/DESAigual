@@ -1,0 +1,18 @@
+model:
+  name: accessibility_baseline
+  random_state: 42
+
+analysis:
+  demand_weight: poblacion
+  travel_metric: network_time_minutes
+  max_travel_time_minutes: 10
+  hospital_scope: emergency_capable
+  travel_mode: driving
+  max_search_minutes: 360
+  surface_grid_size: 220
+  default_speed_unit: kmh
+  building_population_method: tobler_area_weighted_residential
+  walking_speed_kmh: 4.8
+  walking_access_thresholds_minutes: [5, 10, 15]
+  walking_search_minutes: 360
+  population_grid_cell_m: 10000

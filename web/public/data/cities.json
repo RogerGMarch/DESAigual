@@ -1,0 +1,101 @@
+{
+  "05019": {
+    "name": "ÁVILA",
+    "center": [
+      -4.693769378988031,
+      40.658280689634736
+    ],
+    "file": "cities/05019.geojson",
+    "buildings": 6179,
+    "source": "Catastro INSPIRE",
+    "sourceFile": "avila_building_aed_access.gpkg"
+  },
+  "09059": {
+    "name": "BURGOS",
+    "center": [
+      -3.694270351634301,
+      42.3463030196062
+    ],
+    "file": "cities/09059.geojson",
+    "buildings": 8003,
+    "source": "Catastro INSPIRE",
+    "sourceFile": "burgos_building_aed_access.gpkg"
+  },
+  "24089": {
+    "name": "LEÓN",
+    "center": [
+      -5.571666996136978,
+      42.59766970872995
+    ],
+    "file": "cities/24089.geojson",
+    "buildings": 8633,
+    "source": "Catastro INSPIRE",
+    "sourceFile": "leon_building_aed_access.gpkg"
+  },
+  "34120": {
+    "name": "PALENCIA",
+    "center": [
+      -4.5319907222559,
+      42.014081456902026
+    ],
+    "file": "cities/34120.geojson",
+    "buildings": 5021,
+    "source": "Catastro INSPIRE",
+    "sourceFile": "palencia_building_aed_access.gpkg"
+  },
+  "24115": {
+    "name": "PONFERRADA",
+    "center": [
+      -6.607263074821769,
+      42.547316122406485
+    ],
+    "file": "cities/24115.geojson",
+    "buildings": 11857,
+    "source": "Catastro INSPIRE",
+    "sourceFile": "ponferrada_building_aed_access.gpkg"
+  },
+  "37274": {
+    "name": "SALAMANCA",
+    "center": [
+      -5.667166750829702,
+      40.96913723924891
+    ],
+    "file": "cities/37274.geojson",
+    "buildings": 8136,
+    "source": "Catastro INSPIRE",
+    "sourceFile": "salamanca_building_aed_access.gpkg"
+  },
+  "40194": {
+    "name": "SEGOVIA",
+    "center": [
+      -4.115493113910187,
+      40.94447315385624
+    ],
+    "file": "cities/40194.geojson",
+    "buildings": 4301,
+    "source": "Catastro INSPIRE",
+    "sourceFile": "segovia_building_aed_access.gpkg"
+  },
+  "42173": {
+    "name": "SORIA",
+    "center": [
+      -2.4705720008215732,
+      41.76625189053662
+    ],
+    "file": "cities/42173.geojson",
+    "buildings": 2802,
+    "source": "Catastro INSPIRE",
+    "sourceFile": "soria_building_aed_access.gpkg"
+  },
+  "49275": {
+    "name": "ZAMORA",
+    "center": [
+      -5.749639577209111,
+      41.506351180670116
+    ],
+    "file": "cities/49275.geojson",
+    "buildings": 5932,
+    "source": "OpenStreetMap",
+    "sourceFile": "zamora_building_aed_access.gpkg"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "municipalities": 2248,
+  "population": 2398500,
+  "groups": [
+    {
+      "label": "Menos de 100",
+      "municipalities": 754,
+      "population": 42684,
+      "municipalityShare": 33.54092526690391,
+      "populationShare": 1.7796122576610383,
+      "availableMunicipalities": 661,
+      "modeledPopulation": 36426,
+      "modeledPopulationShare": 85.338768625246,
+      "coverage5": 5.90197386482183
+    },
+    {
+      "label": "100–499",
+      "municipalities": 1054,
+      "population": 242391,
+      "municipalityShare": 46.886120996441285,
+      "populationShare": 10.105941213258287,
+      "availableMunicipalities": 808,
+      "modeledPopulation": 182396,
+      "modeledPopulationShare": 75.24866847366445,
+      "coverage5": 9.915225443540429
+    },
+    {
+      "label": "500–1.999",
+      "municipalities": 314,
+      "population": 297468,
+      "municipalityShare": 13.967971530249109,
+      "populationShare": 12.402251407129455,
+      "availableMunicipalities": 257,
+      "modeledPopulation": 243164,
+      "modeledPopulationShare": 81.74459101483184,
+      "coverage5": 15.940699774637693
+    },
+    {
+      "label": "2.000–9.999",
+      "municipalities": 102,
+      "population": 441067,
+      "municipalityShare": 4.537366548042705,
+      "populationShare": 18.389284969772774,
+      "availableMunicipalities": 82,
+      "modeledPopulation": 342287,
+      "modeledPopulationShare": 77.60430954934284,
+      "coverage5": 20.881356347158963
+    },
+    {
+      "label": "10.000–49.999",
+      "municipalities": 15,
+      "population": 313369,
+      "municipalityShare": 0.6672597864768683,
+      "populationShare": 13.065207421304983,
+      "availableMunicipalities": 12,
+      "modeledPopulation": 252880,
+      "modeledPopulationShare": 80.69719723393189,
+      "coverage5": 43.44941217178108
+    },
+    {
+      "label": "50.000 o más",
+      "municipalities": 9,
+      "population": 1061521,
+      "municipalityShare": 0.400355871886121,
+      "populationShare": 44.25770273087346,
+      "availableMunicipalities": 8,
+      "modeledPopulation": 758907,
+      "modeledPopulationShare": 71.49241512885756,
+      "coverage5": 63.0736419745766
+    }
+  ],
+  "method": "Population distribution uses every exported municipality. Access uses available municipalities only, weighted by official population; missing or review results are never zero-filled.",
+  "source": "web/public/data/municipalities.geojson"
+}

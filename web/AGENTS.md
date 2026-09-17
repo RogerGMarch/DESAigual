@@ -89,3 +89,5 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Explorer: retain municipal coverage colours at regional zoom after a city is selected. DESA markers use dark ink; 15-minute/out-of-search-range access uses brick red, never missing-data gray. Preserve a separate no-calculation category.
 
 - September 16 network update: walking search now extends to 360 minutes; reporting thresholds are inclusive 5/10/15 minutes. Snap within 500 m to components with at least 10 nodes. Null means no calculated route, not >15 minutes. Preserve registry locations separately from routing eligibility. Menu stays sticky with a translucent backing for readability.
+
+- Explorer mouse-wheel scrolling stays disabled so page scrolling does not zoom the map. Zoom buttons and pinch remain available; minimum zoom fits Castilla y León to the current viewport.

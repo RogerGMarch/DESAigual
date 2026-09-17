@@ -420,7 +420,10 @@ export function MapView({
       .setData(collection(explorer && selected ? [selected] : []));
     map.dragPan[explorer ? "enable" : "disable"]();
     map.touchZoomRotate[explorer ? "enable" : "disable"]();
-    map.scrollZoom[explorer ? "enable" : "disable"]();
+    // Page scrolling must not change the map camera. Use buttons or pinch.
+    map.scrollZoom.disable();
+    const regionalCamera = map.cameraForBounds(region, { padding });
+    map.setMinZoom(explorer ? (regionalCamera?.zoom ?? 5) : 0);
     map.doubleClickZoom[explorer ? "enable" : "disable"]();
     map.keyboard[explorer ? "enable" : "disable"]();
     map.boxZoom[explorer ? "enable" : "disable"]();

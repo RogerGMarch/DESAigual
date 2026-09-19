@@ -686,6 +686,15 @@ function AppContent({ data }) {
           <div>
             <p className="eyebrow">SOBRE EL AUTOR</p>
             <h2 id="author-heading">Roger González</h2>
+            <img
+              className="author-portrait"
+              src={`${import.meta.env.BASE_URL}images/roger-gonzalez.png`}
+              alt="Retrato de Roger González"
+              width="400"
+              height="400"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <div className="author-bio">
             <p>
@@ -713,7 +722,7 @@ function AppContent({ data }) {
         <a href="#inicio" className="wordmark">
           DESA<span>igual</span>
         </a>
-        <span>CASTILLA Y LEÓN · PROTOTIPO 2026</span>
+        <span>CASTILLA Y LEÓN 2026</span>
         <a href="#inicio">Volver al principio ↑</a>
       </footer>
     </div>
